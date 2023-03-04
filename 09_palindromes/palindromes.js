@@ -1,6 +1,9 @@
 const palindromes = function (originalString) {
-    for(let i = 0; i < originalString.length; i++){
-        if(originalString[i] !== originalString[originalString.length - i - 1]){
+    const regex = /\W/g;
+    const modifiedString = originalString.replace(regex, "").toLowerCase();
+
+    for(let i = 0; i < modifiedString.length; i++){
+        if(modifiedString[i] !== modifiedString[modifiedString.length - i - 1]){
             return false;
         }
     }
