@@ -1,5 +1,8 @@
 const fibonacci = function(target) {
-    if(target === 1 || target === 2){
+    if(target < 0){
+        return "OOPS";
+    }
+    else if(target === 1 || target === 2){
         return 1;
     }
     else{
