@@ -1,4 +1,6 @@
 const fibonacci = function(target) {
+    target = +target;
+    
     if(target < 0){
         return "OOPS";
     }
